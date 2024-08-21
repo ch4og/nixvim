@@ -16,6 +16,7 @@
     todo-comments.enable = true;
     persistence.enable = true;
     floaterm.enable = true;
+    hardtime.enable = true;
 
     treesitter = {
       enable = true;
