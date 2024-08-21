@@ -25,6 +25,10 @@
       key = "<leader>p";
     }
     {
+      action = "<cmd>FloatermToggle<cr>";
+      key = "<leader>t";
+    }
+    {
       action = "<ESC>";
       key = "jj";
       mode = "i";

@@ -15,6 +15,7 @@
     lint.enable = true;
     todo-comments.enable = true;
     persistence.enable = true;
+    floaterm.enable = true;
 
     treesitter = {
       enable = true;
