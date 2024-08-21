@@ -1,8 +1,5 @@
-{pkgs, ...}: {
-  imports = [
-    ./dashboard.nix
-    ./lsp
-  ];
+{ pkgs, ... }: {
+  imports = [ ./dashboard.nix ./lsp ];
   plugins = {
     bufferline.enable = true;
     lualine.enable = true;
@@ -23,8 +20,8 @@
       enable = true;
       settings = {
         ensure_installed = "all";
-        highlight = {enable = true;};
-        indent = {enable = true;};
+        highlight = { enable = true; };
+        indent = { enable = true; };
       };
     };
     noice = {
@@ -69,9 +66,7 @@
     };
     flash = {
       enable = true;
-      settings.modes.search = {
-        enabled = true;
-      };
+      settings.modes.search = { enabled = true; };
     };
 
     fzf-lua = {
@@ -82,11 +77,10 @@
   extraPlugins = with pkgs.vimPlugins; [
     {
       plugin = supermaven-nvim;
-      config = "lua require(\"supermaven-nvim\").setup({keymaps = {accept_suggestion = \"<C-space>\"} })";
+      config = ''
+        lua require("supermaven-nvim").setup({keymaps = {accept_suggestion = "<C-space>"} })'';
     }
-    {
-      plugin = midnight-nvim;
-    }
+    { plugin = midnight-nvim; }
     {
       plugin = vim-suda;
       config = "let g:suda_smart_edit = 1";

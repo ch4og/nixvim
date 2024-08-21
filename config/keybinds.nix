@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   keymaps = [
     {
       action = "<cmd>FzfLua live_grep<cr>";

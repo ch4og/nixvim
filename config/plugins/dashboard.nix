@@ -1,12 +1,10 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   plugins.dashboard = {
     enable = true;
     settings = {
       change_to_vcs_root = true;
       config = {
-        footer = [
-          "Hi, ch4og!"
-        ];
+        footer = [ "Hi, ch4og!" ];
         header = [
           "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
           "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
@@ -44,7 +42,7 @@
           }
           {
             action = {
-              __raw = "function() require(\"persistence\").load() end";
+              __raw = ''function() require("persistence").load() end'';
             };
             desc = " Restore Session";
             icon = " ";

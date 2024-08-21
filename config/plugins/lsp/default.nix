@@ -1,7 +1,1 @@
-{pkgs, ...}: {
-  imports = [
-    ./lsp.nix
-    ./cmp.nix
-    ./conform.nix
-  ];
-}
+{ pkgs, ... }: { imports = [ ./lsp.nix ./cmp.nix ./conform.nix ]; }

@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   opts = {
     updatetime = 100;
     number = true;
@@ -11,7 +11,5 @@
     smartindent = true;
     autoindent = true;
   };
-  globals = {
-    mapleader = " ";
-  };
+  globals = { mapleader = " "; };
 }

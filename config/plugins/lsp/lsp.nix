@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   plugins.lsp = {
     enable = true;
     inlayHints = true;
@@ -13,12 +13,8 @@
         installCargo = true;
         installRustc = true;
       };
-      gopls = {
-        enable = true;
-      };
-      nixd = {
-        enable = true;
-      };
+      gopls = { enable = true; };
+      nixd = { enable = true; };
     };
   };
 }
