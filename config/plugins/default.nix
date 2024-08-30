@@ -11,7 +11,7 @@
     presence-nvim.enable = true;
     which-key.enable = true;
     wakatime.enable = true;
-    autoclose.enable = true;
+    # autoclose.enable = true;
     lint.enable = true;
     todo-comments.enable = true;
     persistence.enable = true;
