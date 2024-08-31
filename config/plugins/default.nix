@@ -68,7 +68,7 @@
     };
     flash = {
       enable = true;
-      settings.modes.search = { enabled = true; };
+      settings.modes.search = { enabled = false; };
     };
 
     fzf-lua = {
