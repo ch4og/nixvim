@@ -7,16 +7,18 @@
         timeoutMs = 1000;
       };
       notify_on_error = true;
-      formatter_by_ft = {
-        javascript = [[ "prettierd" "prettier" ]];
-        json = [[ "prettierd" "prettier" ]];
-        yaml = [[ "prettierd" "prettier" ]];
-        markdown = [[ "prettierd" "prettier" ]];
-        html = [[ "prettierd" "prettier" ]];
+      formatters_by_ft = {
+        javascript = [ "prettierd" ];
+				typescript = [ "prettierd" ];
+				yaml = [ "prettierd" ];
+				markdown = [ "prettierd" ];
+				html = [ "prettierd" ];
+				css = [ "prettierd" ];
         go = [ "gofmt" ];
         python = [ "black" ];
-        nix = [[ "nixfmt" "alejandra" ]];
+        nix = [ "nixfmt" ];
       };
     };
   };
 }
+
