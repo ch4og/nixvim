@@ -9,14 +9,16 @@
       notify_on_error = true;
       formatters_by_ft = {
         javascript = [ "prettierd" ];
-				typescript = [ "prettierd" ];
-				yaml = [ "prettierd" ];
-				markdown = [ "prettierd" ];
-				html = [ "prettierd" ];
-				css = [ "prettierd" ];
+        typescript = [ "prettierd" ];
+        yaml = [ "prettierd" ];
+        markdown = [ "prettierd" ];
+        html = [ "prettierd" ];
+        css = [ "prettierd" ];
         go = [ "gofmt" ];
         python = [ "black" ];
         nix = [ "nixfmt" ];
+        sh = [ "shfmt" ];
+        bash = [ "shfmt" ];
       };
     };
   };
