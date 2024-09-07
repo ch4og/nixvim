@@ -19,6 +19,7 @@
         nix = [ "nixfmt" ];
         sh = [ "shfmt" ];
         bash = [ "shfmt" ];
+        lua = [ "lua-format" ];
       };
     };
   };
